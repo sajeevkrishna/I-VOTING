@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static',filename='materialize.min.css') }}">
+  <title>SECRET BALLOT</title>
+</head>
+ 
+<man height="200px">
+<nav style="height: 120px" >
+           <div class="nav-wrapper orange accent-3">
+            <img src="{{ url_for('static',filename='head.jpg') }}" height="120" width="1500" >
+           </div>
+        </nav>
+</man>
+    
+<main>
+<bodyt >
+
+  <div class="container">
+   <div id="card-alert" class="card light-blue lighten-5">
+                      <div class="card-content light-blue-text">
+                        <p align="center" id="loc_info">PRESS THE CANDIDATE YOU VOTE FOR.<br>
+                          YOU CAN VIEW THE POLL RESULTS ONLY AFTER YOUR VOTE IS REGISTERED.</p>
+                      </div>
+                    </div><form>
+  <table>
+    <h1>
+  	
+        <thead>
+          <tr>
+              <th>Election Symbol</th>
+              <th>Party</th>
+              <th>Candidate Name</th>
+              <th>Poll</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+          	
+          	<td><img src="{{ url_for('static',filename='bjp.png') }}" alt=" "height="44" width="44"></td>
+          	<td>Bharatiya Janata Party</td>
+            <td id="cand1">Narendra Modi</td>
+            <td ><a href="result.html"  id="vote1" value="bjp" class="btn waves-effect waves-light" type="submit" name="vote">Vote
+  </a></td>
+          </tr>
+          <tr>
+            <td><img src="{{ url_for('static',filename='cong.png') }}" alt=" "height="44" width="44"></td>
+            <td>Indian National Congress</td>
+            <td id="cand2">Rahul Gandhi</td>
+            <td><a href="result.html"   id="vote2" value="inc" class="btn waves-effect waves-light" type="submit" name="vote">Vote
+    
+  </a></td>
+          </tr>
+          <tr>
+            <td><img src="{{ url_for('static',filename='dmk.jpg') }}" alt=" "height="46" width="50"></td>
+            <td>Dravida Munnetra Kazhagam</td>
+            <td id="cand3">Karunanidhi</td>
+            <td><a href="result.html"   id="vote3" value="dmk" class="btn waves-effect waves-light" type="submit" name="vote">Vote
+    
+  </a></td>
+          </tr>
+          <tr>
+            <td><img src="{{ url_for('static',filename='admk.png') }}" alt=" "height="46" width="50"></td>
+             <td>Anna Dravida Munnetra Kazhagam</td>
+            <td id="cand4">Jayalalitha</td>
+            <td><a href="result.html" value="admk" id="vote4" class="btn waves-effect waves-light" type="submit" name="vote">Vote
+    
+            </a></td>
+          </tr>
+      </h1>
+    </table>
+  </form>
+  </div>
+  </main>
+        </tbody>
+      </bodyt>
+<br><br>
+         <footer style="height: 70px"; class="page-footer green darken-2">
+              <div class="brand-logo center">Made by Sajeev Krishna</div>
+        </div>
+        </footer>
+
+</html>

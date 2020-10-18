@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>I-Voting | Login</title>
+        <link href="{{ url_for('static',filename='bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static',filename='animate.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static',filename='style.css') }}" rel="stylesheet">
+    </head>
+    <body class="gray-bg">
+        <div class="middle-box text-center loginscreen animated fadeInDown">
+            <div>
+                <div>
+                    <h1 class="logo-name"><img src="{{ url_for('static',filename='e-voting-logo.png') }}" width="150"></h1>
+                </div>
+                <h3>Welcome to I-Voting</h3>
+                
+                
+                <div class="m-t" role="form" action="#"  >
+                    <form>
+                    <div class="form-group">
+                         <input type="text" id="voterid" name="voterid" class="form-control" placeholder="Voterid" required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" name="aadharno" id="aadharno" class="form-control" placeholder="Aadharno" required>
+                    </div>
+                    <a href="/templates/app.html" id="login" class="btn btn-primary block full-width m-b login">Login</a>
+                </form>
+                {{ output | safe }}
+                </div>
+                <br>
+            </div>
+        </div>
+        <div class="footer">
+            <ul class="class   copy-right">
+                <div>
+                  <p align="center">Made by Sajeev Krishna</p>
+                </div>
+                
+               
+            </ul>
+            
+        </div>
+    </body>
+
+  
+</html>
