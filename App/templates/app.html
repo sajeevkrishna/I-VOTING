@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Verify Aadhaar | OTP</title>
+        <link href="{{ url_for('static',filename='bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static',filename='animate.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static',filename='style.css') }}" rel="stylesheet">
+    </head>
+    <body class="gray-bg">
+        <div class="middle-box text-center loginscreen animated fadeInDown">
+            <div>
+                <div>
+                    <h1 class="logo-name"><img src="{{ url_for('static',filename='e-voting-logo.png') }}" width="150"></h1>
+                </div>
+                <h3>Verify Aadhaar OTP</h3>
+                
+                {{ output | safe }}
+                <div class="m-t" id="enter_otp" role="form" action="#"  >
+                    <form>
+                    <div class="form-group">
+                         <input type="number" onkeypress="return isNumberKey(event)" id="OTP" name="OTP" class="form-control" placeholder="OTP" required autofocus>
+                    </div>
+                   
+                    <a href="/templates/clist.html" id="verifyotp" class="btn btn-primary block full-width m-b login">Verify OTP</a>
+                    </form>
+                </div>
+                <br>
+
+            </div>
+        </div>  
+
+
+        <div class="footer">
+            <ul class="class   copy-right">
+                <div>
+                  <p align="center">Made by Sajeev Krishna</p>
+                </div>
+                
+            </ul>
+            
+        </div>
+    </body>
+
+  
+</html>
