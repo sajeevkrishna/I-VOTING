@@ -22,7 +22,7 @@
                         <p align="center" id="loc_info">PRESS THE CANDIDATE YOU VOTE FOR.<br>
                           YOU CAN VIEW THE POLL RESULTS ONLY AFTER YOUR VOTE IS REGISTERED.</p>
                       </div>
-                    </div><form>
+                    </div>    <form action="/mineblock" method="post">
   <table>
     <h1>
   	
@@ -41,36 +41,36 @@
           	<td><img src="{{ url_for('static',filename='bjp.png') }}" alt=" "height="44" width="44"></td>
           	<td>Bharatiya Janata Party</td>
             <td id="cand1">Narendra Modi</td>
-            <td ><a href="result.html"  id="vote1" value="bjp" class="btn waves-effect waves-light" type="submit" name="vote">Vote
-  </a></td>
+            <td ><button id="vote1" value="BJP" class="btn waves-effect waves-light" name="vote">Vote
+  </button></td>
           </tr>
           <tr>
             <td><img src="{{ url_for('static',filename='cong.png') }}" alt=" "height="44" width="44"></td>
             <td>Indian National Congress</td>
             <td id="cand2">Rahul Gandhi</td>
-            <td><a href="result.html"   id="vote2" value="inc" class="btn waves-effect waves-light" type="submit" name="vote">Vote
+            <td><button id="vote2" value="INC" class="btn waves-effect waves-light" name="vote">Vote
     
-  </a></td>
+  </button></td>
           </tr>
           <tr>
             <td><img src="{{ url_for('static',filename='dmk.jpg') }}" alt=" "height="46" width="50"></td>
             <td>Dravida Munnetra Kazhagam</td>
             <td id="cand3">Karunanidhi</td>
-            <td><a href="result.html"   id="vote3" value="dmk" class="btn waves-effect waves-light" type="submit" name="vote">Vote
+            <td><button id="vote3" value="DMK" class="btn waves-effect waves-light" name="vote">Vote
     
-  </a></td>
+  </button></td>
           </tr>
           <tr>
             <td><img src="{{ url_for('static',filename='admk.png') }}" alt=" "height="46" width="50"></td>
              <td>Anna Dravida Munnetra Kazhagam</td>
             <td id="cand4">Jayalalitha</td>
-            <td><a href="result.html" value="admk" id="vote4" class="btn waves-effect waves-light" type="submit" name="vote">Vote
+            <td><button value="ADMK" id="vote4" class="btn waves-effect waves-light" name="vote">Vote
     
-            </a></td>
+            </button></td>
           </tr>
       </h1>
     </table>
-  </form>
+              </form>
   </div>
   </main>
         </tbody>
