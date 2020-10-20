@@ -1,0 +1,7 @@
+#requirements
+python==3.9.0
+  hashlib
+  datetime
+  json
+  flask==1.1.1
+ html5
