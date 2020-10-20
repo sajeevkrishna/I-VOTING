@@ -18,3 +18,6 @@ Run the flaskapp with
 ```bash
 $python app.py
 ```
+
+## License
+[GNU](https://choosealicense.com/licenses/gpl-3.0/)
