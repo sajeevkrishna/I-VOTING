@@ -70,7 +70,7 @@ app.py
 ```
 # DEMONSTRATION
 > [WRITEUP](https://drive.google.com/file/d/18Nf0auWrc--6txV_YB_HjQxSOr3762sT/view?usp=sharing)
-> [DEMO-VIDEO]()
+> [DEMO-VIDEO](https://drive.google.com/file/d/1IUbA1f3wxtZSueiuwtE62cNc_bQHaVEJ/view?usp=sharing)
 
 ### License
 [GNU](https://choosealicense.com/licenses/gpl-3.0/)
