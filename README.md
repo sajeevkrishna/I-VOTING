@@ -32,7 +32,8 @@ A SECURE VOTING PORTAL FOR THE ELECTION COMMISION OF INDIA
 
 ## ADVANTAGES:
 	AVAILABILITY: Increased online voting duration ensures that the 29 lakh lost votes are polled.
-	FLEXIBILITY: Classifying voter-ids does not strictly enforce online voting to the technologically weaker sections and provides flexibility.
+	FLEXIBILITY: Classifying voter-ids does not strictly enforce online voting to the technologically
+		     weaker sections and provides flexibility.
 	FAKE-PROOF: Linking voter-IDs with aadhar can prevent fake-votes.
 	CUTTING EDGE TECH: Employs the state-of-art blockchain and RSA encryption technologies.
 	FAST: Provides real-time results.
