@@ -68,6 +68,9 @@ Run the flaskapp with
 ```
 app.py
 ```
+# DEMONSTRATION
+[WRITEUP](https://drive.google.com/file/d/18Nf0auWrc--6txV_YB_HjQxSOr3762sT/view?usp=sharing)
+[DEMO-VIDEO]()
 
 ### License
 [GNU](https://choosealicense.com/licenses/gpl-3.0/)
