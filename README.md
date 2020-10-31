@@ -1,16 +1,16 @@
 # I-VOTING
 A SECURE VOTING PORTAL FOR THE ELECTION COMMISION OF INDIA
 
-## DESCRIPTION
-`
-**PRE-REQUISITES FOR THE SOLUTION:**
+# DESCRIPTION
+
+## PRE-REQUISITES FOR THE SOLUTION:
 	Voter-IDs are categorized into 2 classes; namely offline and online.
 	Offline Voter-IDs can be used only at the EVMs.
 	Similarly offline voter-IDs can be used only in the online voting portal.
 	The voter can choose either type of the voter-ID before the commencement of the election.
 	Every Voter-ID must be linked with the Aadhar card.
 	
-**WORK-FLOW OF THE SOLUTION:**
+## WORK-FLOW OF THE SOLUTION:
 	1. Before the election commences, the voter can choose his voting preference(online or offline).
 	2. The offline voting takes place parallely and will not interfere in the online voting mechanism.
 	**OFFLINE VOTING:**
@@ -30,7 +30,7 @@ A SECURE VOTING PORTAL FOR THE ELECTION COMMISION OF INDIA
 		vii. Voting can be available from 6:00 am to 9:00 pm unlike offline voting.
 	3. The votes of the online and offline streams are added together to give the final results.
 
-**ADVANTAGES:**
+## ADVANTAGES:
 	**AVAILABILITY:** Increased online voting duration ensures that the 29 lakh lost votes are polled.
 	**FLEXIBILITY:** Classifying voter-ids does not strictly enforce online voting to the technologically weaker sections and provides flexibility.
 	**FAKE-PROOF:** Linking voter-IDs with aadhar can prevent fake-votes.
@@ -39,7 +39,7 @@ A SECURE VOTING PORTAL FOR THE ELECTION COMMISION OF INDIA
 	**SECURE & TRANSPARENT:** Eliminates booth rigging and accusations of ballot riggings.
 	**ROBUST:** Multi-factor authentication is an equivalent alternative for indelible ink.
 
-**TECHNOLOGY STACKS USED:**
+## TECHNOLOGY STACKS USED:
 	PYTHON 3.8.0 (SERVER SIDE LANGUAGE)
 		FLASK FRAMEWORK
 	RSA ENCRYPTION ALGORITHM
@@ -48,7 +48,7 @@ A SECURE VOTING PORTAL FOR THE ELECTION COMMISION OF INDIA
 	JAVASCRIPT
 	CSS, BOOTSTRAP
 	SHA256 ALGORITHM
-`
+
 
 ### RUNNING THE APP
 
