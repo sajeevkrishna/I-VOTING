@@ -16,6 +16,7 @@ def getvotes():
             vote=b.chain[i].transaction
             d[vote]=1
     return d
+
 @app.route('/',methods=['GET','POST'])
 def home():
     if request.method=='GET':
@@ -35,6 +36,7 @@ def verify():
 def ballot():
     if request.method=='GET':
         return render_template('clist.html')
+    #b.peers.update(myport)
 
 @app.route('/pollstats',methods=['GET','POST'])
 def result():

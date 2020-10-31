@@ -1,6 +1,7 @@
 import datetime 
 import hashlib 
 import json
+import requests
 class block:
     def __init__(self,index,transaction,previous_hash,nonce):
         self.index=index
@@ -11,6 +12,7 @@ class block:
     def compute_hash(self):
         return hashlib.sha256((self.tostring).encode()).hexdigest()
 class blockchain:
+    peers=set()
     def __init__(self):
         self.chain=[]
         genesisproof=self.proofofwork('nota0null')
@@ -28,13 +30,6 @@ class blockchain:
                 return str(nonce)
             else:
                 nonce+=1
-    def mine(self,transaction):
-        lastblock=self.last()
-        index=str(int(lastblock.index)+1)
-        prev_hash=lastblock.compute_hash()
-        string=transaction+index+prev_hash
-        nonce=self.proofofwork(string)
-        self.chain.append(block(index,transaction,prev_hash,nonce))
     def isvalid(self):
         difficulty=3
         for i in range(1,len(self.chain)):
@@ -43,3 +38,15 @@ class blockchain:
             if self.chain[i].compute_hash()[:difficulty]!='0'*difficulty:
                 return False
         return True
+    def mine(self,transaction):
+        lastblock=self.last()
+        index=str(int(lastblock.index)+1)
+        prev_hash=lastblock.compute_hash()
+        string=transaction+index+prev_hash
+        nonce=self.proofofwork(string)
+        self.chain.append(block(index,transaction,prev_hash,nonce))
+        if self.isvalid():
+            pass
+        else:
+            self.chain.pop()
+        #send a copy to all peers
